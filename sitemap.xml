@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- After deployment, replace PAGES_URL with the actual https://project.pages.dev URL. -->
+  <url><loc>https://PAGES_URL/</loc></url>
+</urlset>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="TG WIN is a free colour game for entertainment using points with no cash value. No deposits, cash prizes or withdrawals.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="TG WIN — Free Points Colour Game">
+<meta property="og:description" content="Play a free colour game using entertainment points only. No real money.">
+<meta property="og:type" content="website">
+<title>TG WIN — Free Points Game</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><a class="brand" href="/">TG<span>WIN</span></a><div id="account"><button class="ghost" id="loginOpen">Login</button><button class="primary" id="registerOpen">Register</button></div></header>
+<main>
+<section class="hero"><div><p class="eyebrow">FREE PLAY • NO REAL MONEY</p><h1>Welcome to <span>TG WIN</span></h1><p>Play colour rounds using free points. Points have no cash value and cannot be withdrawn.</p></div><div class="wallet"><small>YOUR FREE POINTS</small><strong id="balance">—</strong><small id="who">Login to start playing</small></div></section>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">CHOOSE YOUR ROUND</p><h2>Colour prediction</h2></div><select id="period"><option value="30">30 Seconds</option><option value="60">1 Minute</option><option value="180">3 Minutes</option><option value="300">5 Minutes</option></select></div>
+<div class="timer"><span>DEMO TIMER (DISPLAY ONLY)</span><strong id="countdown">--:--</strong><small id="roundLabel">Free-play round</small></div>
+<div class="colours"><button class="colour green" data-colour="Green">GREEN</button><button class="colour violet" data-colour="Violet">VIOLET</button><button class="colour red" data-colour="Red">RED</button></div>
+<div class="playrow"><label>Points to use <input id="points" type="number" min="1" max="1000" value="10"></label><button class="primary" id="play" disabled>Login to play</button></div>
+<p class="hint">Each play resolves instantly at random. The timer is decorative. Free points have no cash value; no deposits, cash prizes, or withdrawals.</p><p id="message" role="status"></p>
+</section>
+<section class="panel"><div class="section-head"><div><p class="eyebrow">RECENT ACTIVITY</p><h2>Your history</h2></div><button class="ghost" id="refresh">Refresh</button></div><div class="tablewrap"><table><thead><tr><th>Time</th><th>Round</th><th>Choice</th><th>Points</th><th>Result</th></tr></thead><tbody id="history"><tr><td colspan="5">Login to see your history.</td></tr></tbody></table></div></section>
+<section class="panel admin" id="adminPanel" hidden><div class="section-head"><div><p class="eyebrow">CONTROL CENTRE</p><h2>Admin dashboard</h2></div><button class="ghost" id="loadUsers">Refresh users</button></div><div class="tablewrap"><table><thead><tr><th>User</th><th>Points</th><th>Joined</th><th>Adjust points</th></tr></thead><tbody id="users"></tbody></table></div></section>
+</main>
+<footer>TG WIN • Free entertainment points only • No monetary value</footer>
+<dialog id="auth"><form method="dialog" id="authForm"><button class="close" value="cancel" aria-label="Close">×</button><p class="eyebrow" id="authEyebrow">ACCOUNT</p><h2 id="authTitle">Login</h2><label>Username<input id="username" minlength="3" maxlength="24" required autocomplete="username"></label><label>Password<input id="password" type="password" minlength="8" required autocomplete="current-password"></label><button class="primary wide" id="authSubmit" value="default">Continue</button><p id="authMessage"></p><button class="textbtn" type="button" id="switchAuth">Create an account</button></form></dialog>
+<script src="/app.js"></script>
+</body></html>
